@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <script src="app.js" defer></script>
+    <title>Todo App</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <h1 class="logo">TODO</h1>
+            <button class="clearAll">Clear All</button>
+        </div>
+        <div class="todo">
+            <div class="inp">
+                <img src="images/Ellipse.png" alt="Ellipse" class="oval">
+                <input type="text" class="todoInp" id="input" placeholder="Create a new todo...">
+            </div>
+
+            <div class="lists">
+                    <div class="items">
+                        <p class="itemLeft"><span class="count-item">0</span> Items left</p>
+
+                        <div class="btns">
+                            <button class="allBtn">All</button>
+                            <button class="activeBtn">Active</button>
+                            <button class="completeBtn">Complete</button>
+                        </div>
+
+                        <button class="clearBtn">Clear completed</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

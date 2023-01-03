@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #1E1E1E;
+  background-image: url(../images/bg-desktop-dark\ 1.png);
+  background-position: top 0px, left 0px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 542px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 79px;
+}
+.header .clearAll {
+  padding: 10px 35px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background-color: #25273C;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.header .clearAll:hover {
+  transform: scale(1.2);
+}
+.header .logo {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  letter-spacing: 0.5em;
+  color: #FFFFFF;
+}
+
+.todo {
+  width: 542px;
+  margin-top: 42px;
+}
+.todo .inp {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 64px;
+  position: relative;
+  background: #25273C;
+  border-radius: 6px;
+}
+.todo .inp img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.todo .inp input {
+  background: none;
+  outline: none;
+  border: none;
+  padding: 23px 309px 23px 70px;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+}
+.todo .inp input::-moz-placeholder {
+  color: #6C6E83;
+}
+.todo .inp input:-ms-input-placeholder {
+  color: #6C6E83;
+}
+.todo .inp input::placeholder {
+  color: #6C6E83;
+}
+.todo .active-todo p {
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+.todo .todo-list {
+  width: 100%;
+  height: 64px;
+  background-color: #25273C;
+  border-radius: 6px;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  order: 1;
+}
+.todo .todo-list p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+.todo .todo-list div {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #303247;
+  border-radius: 50%;
+  margin: 0px 16px 0px 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.todo .active {
+  background-image: url(../images/check.png);
+}
+.todo .lists {
+  margin-top: 24px;
+  background-color: #303247;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+.todo .items {
+  width: 100%;
+  height: 64px;
+  background: #25273C;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  order: 2;
+}
+.todo .items button {
+  background: none;
+  border: none;
+  outline: none;
+  color: #6C6E83;
+  transition: all 0.4s;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+}
+.todo .items button:hover {
+  color: #4777DB;
+}
+.todo .items .itemLeft {
+  padding-left: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: #6C6E83;
+}
+.todo .items .btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 149px;
+}
+.todo .items .clearBtn {
+  padding-right: 20px;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-image: url(../images/bg-mobile-dark\ 1.png);
+    background-size: 100%;
+  }
+  .header {
+    width: 327px;
+  }
+  .header .clearAll {
+    padding: 10px 25px;
+    font-size: 15px;
+  }
+  .header .logo {
+    font-size: 24px;
+  }
+  .todo {
+    width: 327px;
+  }
+  .todo .inp img {
+    width: 20px;
+    height: 20px;
+  }
+  .todo .inp input {
+    padding: 18px 162px 18px 56px;
+    font-size: 12px;
+  }
+  .items {
+    position: relative;
+  }
+  .items .itemLeft {
+    font-size: 12px;
+  }
+  .items button {
+    font-size: 12px;
+  }
+  .items .btns {
+    position: absolute;
+    width: 100% !important;
+    bottom: -48px;
+    background-color: #25273C;
+    height: 40px;
+    border-radius: 4px;
+  }
+  .items .btns button:nth-child(1) {
+    margin-left: 89px;
+  }
+  .items .btns button:nth-child(2) {
+    margin: 0px 16px 0px;
+  }
+  .items .btns button:nth-child(3) {
+    margin-right: 89px;
+  }
+}/*# sourceMappingURL=style.css.map */
